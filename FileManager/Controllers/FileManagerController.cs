@@ -56,7 +56,7 @@ namespace FileManager.Controllers
             var responseOk = new FileManagementServiceResponse()
             {
                 StatusCode = 200,
-                StatusMessage = "The file already exits in the database. Nothing got updated."
+                StatusMessage = "The file already exits in the database. Nothing got updated"
             };
 
             return StatusCode(responseOk.StatusCode, responseOk.StatusMessage);
