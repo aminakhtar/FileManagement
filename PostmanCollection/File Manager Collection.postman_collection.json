@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "f9bf5c1a-ce5e-4ed2-b4b0-a44aca50d549",
+		"name": "File Manager Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26432258"
+	},
+	"item": [
+		{
+			"name": "CreateFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "inputfile",
+							"type": "file",
+							"src": "/C:/Users/amin_/OneDrive/Desktop/Desktop/USCIS/Amin birth Certificate Original.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7042/api/file-management/CreateFile",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"file-management",
+						"CreateFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "inputfile",
+							"type": "file",
+							"src": "/C:/Users/amin_/OneDrive/Desktop/Desktop/USCIS/Amin birth Certificate Original.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7042/api/file-management/UpdateFile",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"file-management",
+						"UpdateFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputfilename\" : \"Amin birth Certificate Original.jpg\",\r\n    \"version\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7042/api/file-management/DeleteFile",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"file-management",
+						"DeleteFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListFiles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7042/api/file-management/ListFiles",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"file-management",
+						"ListFiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListAllVersionsOfAFile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7042/api/file-management/ListAllVersionsOfAFile?filename=Amin Birth Certificate.jpg",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"file-management",
+						"ListAllVersionsOfAFile"
+					],
+					"query": [
+						{
+							"key": "filename",
+							"value": "Amin Birth Certificate.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListAllFilesAndVersions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7042/api/file-management/ListAllFilesAndVersions",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"file-management",
+						"ListAllFilesAndVersions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
