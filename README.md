@@ -60,3 +60,6 @@ Create a file system for the actual files. Currently, we only use the files' met
 After creating a file system, the database can be used as a dictionary for tracking the files.
 Save the file stream in the database. Create an endpoint for the Get file. If a user sends a Get request, we should write the stream into a file and send it to the user.
 Add logging to track information and exceptions.
+
+## API Demo
+https://www.youtube.com/watch?v=U4aGpJ1GP4I
